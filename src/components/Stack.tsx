@@ -48,11 +48,8 @@ export function StackComponent() {
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"  height={90} width={90}/>
           
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"  height={90} width={90}/>
-            
-            
+          
             <i className="devicon-github-original"  ></i>
-          
-          
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" height={90} width={90} />
           
           </CardDescription>
