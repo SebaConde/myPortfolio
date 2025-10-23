@@ -2,6 +2,7 @@ import { NavbarComponent } from "@/components/Navbar";
 import { AboutMeComponent } from "@/components/AboutMe";
 import { ProjectsComponent } from "@/components/Projects";
 import { StackComponent} from "@/components/Stack"
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -12,8 +13,9 @@ export default function Home() {
       // <ProjectsComponent />
       // <StackComponent />   */}
         <div className="flex justify-center items-center h-screen">
-         <img src="/animated.png" alt="" height={800} width={800} />
+         {/* <img src="/animated.png" alt="" height={800} width={800} /> */}
+         <Image src="/animated.png" alt="Descripción" height={800} width={800} priority />
        </div>
-    //</div>
+    </div>
   );
 }
