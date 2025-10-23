@@ -1,29 +1,24 @@
 "use client";
-import {
-  Navbar,
-  NavBody,
-  NavItems,
-  MobileNav,
-  NavbarLogo,
-  NavbarButton,
-  MobileNavHeader,
-  MobileNavToggle,
-  MobileNavMenu,
-} from "@/components/ui/resizable-navbar";
+import {Navbar,NavBody,NavItems,MobileNav,NavbarLogo,NavbarButton,MobileNavHeader,MobileNavToggle,MobileNavMenu} from "@/components/ui/resizable-navbar";
 import { useState } from "react";
+import { Download } from "lucide-react";
 
 export function NavbarComponent() {
   const navItems = [
     {
-      name: "Features",
+      name: "About me",
       link: "#features",
     },
     {
-      name: "Pricing",
+      name: "Proyectos",
       link: "#pricing",
     },
     {
-      name: "Contact",
+      name: "Stack",
+      link: "#contact",
+    },
+    {
+      name: "Contacto",
       link: "#contact",
     },
   ];
@@ -37,9 +32,8 @@ export function NavbarComponent() {
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
-          <div className="flex items-center gap-4">
-            <NavbarButton variant="secondary">Login</NavbarButton>
-            <NavbarButton variant="primary">Book a call</NavbarButton>
+          <div className="flex items gap-4">
+            <NavbarButton variant="primary" className="flex items-center gap-2">Descargar cv<Download height={20} width={20}/></NavbarButton>
           </div>
         </NavBody>
 
