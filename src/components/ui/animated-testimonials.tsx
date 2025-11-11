@@ -79,6 +79,7 @@ export const AnimatedTestimonials = ({
                   }}
                   className="absolute inset-0 origin-bottom"
                 >
+                  
                   <img
                     src={testimonial.src}
                     alt={testimonial.name}
