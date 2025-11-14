@@ -9,19 +9,19 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="relative mt-0 min-h-screen bg-[radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] bg-fixed bg-cover px-5 py-24 ">
-      <NavbarComponent />
-      <AboutMeComponent />
+    // <div className="relative mt-0 min-h-screen bg-[radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] bg-fixed bg-cover px-5 py-24 ">
+    //   <NavbarComponent />
+    //   <AboutMeComponent />
 
-      <StackComponent />
-      <ProjectsComponent />
-      <Certificaciones />
-      <Contacto />
-      <Footer />
+    //   <StackComponent />
+    //   <ProjectsComponent />
+    //   <Certificaciones />
+    //   <Contacto />
+    //   <Footer />
       
-      {/* <div className="flex justify-center items-center h-screen bg-[#f3e5ce]">
+       <div className="flex justify-center items-center h-screen bg-[#f3e5ce]">
         <Image src="/animated.png" alt="Descripción" height={800} width={800} priority />
-      </div>  */}
-    </div>
+      </div>  
+    //</div>
   );
 }
