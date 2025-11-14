@@ -11,7 +11,7 @@ export function AboutMeComponent() {
     },
     {
         quote:
-          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur a, impedit nisi placeat ipsam odio fugiat, deserunt, veritatis illo provident quia sapiente? Accusantium reprehenderit tempora incidunt rerum neque delectus libero?",
+          "Soy Jonathan Israel Caballero Morales con una mentalidad de aprendizaje continuo desde mis 15 años, orientado a soluciones reales y escalables.Colaboré en Clever Cloud, mejorando proyectos con foco en calidad, orden y comunicación.Mi objetivo es formar parte de equipos donde la creatividad y el impacto importen, aportando mi propuesta diferencial.",
         name: "About me",
         designation: "Product Manager at TechFlow",
         src: "https://assets.goal.com/images/v3/blt30b29a7a34b21cf2/GOAL%20-%20Blank%20WEB%20-%20Facebook%20-%202025-09-22T070205.335.png?auto=webp&format=pjpg&width=3840&quality=60 ",
