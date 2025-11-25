@@ -7,19 +7,23 @@ export function NavbarComponent() {
   const navItems = [
     {
       name: "About me",
-      link: "#features",
-    },
-    {
-      name: "Proyectos",
-      link: "#pricing",
+      link: "#aboutMe",
     },
     {
       name: "Stack",
-      link: "#contact",
+      link: "#stack",
+    },
+    {
+      name: "Proyectos",
+      link: "#proyectos",
+    },
+    {
+      name: "Certificaciones",
+      link: "#certificaciones",
     },
     {
       name: "Contacto",
-      link: "#contact",
+      link: "#contacto",
     },
   ];
 
@@ -33,7 +37,7 @@ export function NavbarComponent() {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items gap-4">
-            <NavbarButton variant="primary" className="flex items-center gap-2">Descargar cv<Download height={20} width={20}/></NavbarButton>
+            <NavbarButton variant="primary" className="flex items-center gap-2"  download href="/SebastianCondeVillalbaCV.pdf">Descargar cv<Download height={20} width={20}/></NavbarButton>
           </div>
         </NavBody>
 

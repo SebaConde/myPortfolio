@@ -1,7 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
-
-import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "motion/react";
+
 
 import { useEffect, useState } from "react";
 
@@ -143,22 +143,41 @@ export const AnimatedTestimonials = ({
                   {word}&nbsp;
                 </motion.span>
               ))}
+          
             </motion.p>
+            <div className="flex gap-2 mb-2 mt-6">
+              <a 
+                href='https://github.com/SebaConde' 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="transition-transform duration-200 hover:scale-110"
+              >
+                <img 
+                  src={'./icons/github.svg'} 
+                  width={30} 
+                  height={30} 
+                  alt="GitHub"
+                />
+              </a>
+              
+              <a 
+                href='https://www.linkedin.com/in/scondevillalba/' 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="transition-transform duration-200 hover:scale-110"
+              >
+                <img 
+                  src={'./icons/linkedin.svg'} 
+                  width={30} 
+                  height={30} 
+                  alt="LinkedIn"
+                />
+              </a>
+            </div>
+            
+            
           </motion.div>
-          <div className="flex gap-4 pt-12 md:pt-0">
-            <button
-              onClick={handlePrev}
-              className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"
-            >
-              <IconArrowLeft className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:rotate-12 dark:text-neutral-400" />
-            </button>
-            <button
-              onClick={handleNext}
-              className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"
-            >
-              <IconArrowRight className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:-rotate-12 dark:text-neutral-400" />
-            </button>
-          </div>
+            
         </div>
       </div>
     </div>

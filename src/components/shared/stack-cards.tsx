@@ -24,6 +24,7 @@ import mongodb from '../../../public/icons/mongodb.svg'
 import postgre from '../../../public/icons/postgresql.svg'
 import mysql from '../../../public/icons/mysql.svg'
 import sqlServer from '../../../public/icons/sqlServer.svg'
+import neon from '../../../public/icons/neon.svg'
 
 import git from '../../../public/icons/git.svg'
 import github from '../../../public/icons/github.svg'
@@ -79,6 +80,7 @@ export default function ExpandableStackCards() {
       { nombre: "MySQL", icon: mysql },
       { nombre: "PostgreSQL", icon: postgre },
       { nombre: "SQL Server", icon: sqlServer },
+      { nombre: "Neon", icon: neon },
     ],
   },
   {
