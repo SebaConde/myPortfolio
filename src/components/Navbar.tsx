@@ -2,8 +2,11 @@
 import {Navbar,NavBody,NavItems,MobileNav,NavbarLogo,NavbarButton,MobileNavHeader,MobileNavToggle,MobileNavMenu} from "@/components/ui/resizable-navbar";
 import { useState } from "react";
 import { Download } from "lucide-react";
+import { useSmoothScroll } from '@/hooks/use-smooth-scroll';
 
 export function NavbarComponent() {
+  const { scrollToSection } = useSmoothScroll();
+  
   const navItems = [
     {
       name: "About me",
@@ -29,15 +32,38 @@ export function NavbarComponent() {
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const handleNavClick = (link: string) => {
+    scrollToSection(link.replace('#', ''));
+    setIsMobileMenuOpen(false);
+  };
+
   return (
-    <div className="relative w-full">
+    <div className="relative w-full z-50">
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody>
           <NavbarLogo />
-          <NavItems items={navItems} />
-          <div className="flex items gap-4">
-            <NavbarButton variant="primary" className="flex items-center gap-2"  download href="/SebastianCondeVillalbaCV.pdf">Descargar cv<Download height={20} width={20}/></NavbarButton>
+          <div onClick={(e) => {
+            const target = e.target as HTMLElement;
+            const link = target.closest('a')?.getAttribute('href');
+            if (link?.startsWith('#')) {
+              e.preventDefault();
+              scrollToSection(link.replace('#', ''));
+            }
+          }}>
+            <NavItems items={navItems} />
+          </div>
+          <div className="flex items-center gap-4">
+            <NavbarButton 
+              variant="primary" 
+              className="flex items-center gap-2"  
+              as="a"
+              download 
+              href="/SebastianCondeVillalbaCV.pdf"
+            >
+              Descargar cv
+              <Download height={20} width={20}/>
+            </NavbarButton>
           </div>
         </NavBody>
 
@@ -56,35 +82,17 @@ export function NavbarComponent() {
             onClose={() => setIsMobileMenuOpen(false)}
           >
             {navItems.map((item, idx) => (
-              <a
+              <button
                 key={`mobile-link-${idx}`}
-                href={item.link}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-neutral-600 dark:text-neutral-300"
+                onClick={() => handleNavClick(item.link)}
+                className="relative text-neutral-600 dark:text-neutral-300 w-full text-left"
               >
                 <span className="block">{item.name}</span>
-              </a>
+              </button>
             ))}
-            <div className="flex w-full flex-col gap-4">
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Login
-              </NavbarButton>
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Book a call
-              </NavbarButton>
-            </div>
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
-      {/* Navbar */}
     </div>
   );
 }

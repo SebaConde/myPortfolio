@@ -37,7 +37,6 @@ export default function ContactForm() {
 
         <form onSubmit={handleSubmit} className="space-y-6 text-center mb-8">
           
-          {/* Nombre */}
           <div>
             <label htmlFor="nombre" className="block font-semibold mb-2">
               Nombre completo
@@ -54,7 +53,6 @@ export default function ContactForm() {
             />
           </div>
 
-          {/* Email */}
           <div>
             <label htmlFor="email" className="block font-semibold mb-2">
               Correo electrónico
@@ -71,7 +69,6 @@ export default function ContactForm() {
             />
           </div>
 
-          {/* Asunto */}
           <div>
             <label htmlFor="asunto" className="block font-semibold mb-2">
               Asunto
@@ -88,7 +85,6 @@ export default function ContactForm() {
             />
           </div>
 
-          {/* Mensaje */}
           <div>
             <label htmlFor="mensaje" className="block font-semibold mb-2">
               Mensaje
@@ -105,7 +101,6 @@ export default function ContactForm() {
             />
           </div>
 
-          {/* Botón */}
           <button
             type="submit"
             className="w-full bg-linear-to-r from-indigo-500 to-purple-600 text-white font-bold py-4 px-6 

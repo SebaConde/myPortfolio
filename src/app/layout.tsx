@@ -28,7 +28,6 @@ export default function RootLayout({
       <body
         className={`${urbanist.className} antialiased bg-zinc-950 text-white`}
       >
-        {/* 🚀 Scroll suave activado */}
         <LenisProvider />
         {children}
       </body>
