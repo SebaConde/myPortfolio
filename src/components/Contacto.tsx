@@ -1,5 +1,4 @@
 'use client'
-import { ArrowRight } from "lucide-react";
 import { TypingAnimation } from "./ui/typing-animation";
 import ContactForm from "./shared/contact-form";
 
