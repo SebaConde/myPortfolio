@@ -98,13 +98,36 @@ export default function ExpandableStackCards() {
     ],
   },
 ];
-
+ //Solucion dinamica.
+  // return (
+  //   <>
+  //   <div className="flex flex-wrap gap-6 justify-center mt-4">
+  //       {techCategories.map((cat) => (
+  //       <BackgroundGradient key={cat.tipo} className="rounded-[22px] max-w-sm p-2 sm:p-4 bg-white dark:bg-zinc-900">
+  //       <Card className="border-0 w-80">
+  //           <CardHeader>
+  //           <CardTitle className="text-center text-3xl">{cat.tipo}</CardTitle>
+  //               <CardDescription className="flex flex-wrap gap-8 justify-center mt-4">
+  //                   {cat.tecnologias.map((t) => (
+  //                   <div key={t.nombre} className="flex flex-col items-center text-center transition-transform duration-200 hover:scale-110">
+  //                       <Image src={t.icon} height={60} width={60} alt={t.nombre} />
+  //                       <span className="mt-2 text-sm text-zinc-600 dark:text-zinc-300 font-bold select-none">{t.nombre}</span>
+  //                   </div>
+  //                   ))}
+  //               </CardDescription>
+  //           </CardHeader>
+  //       </Card>
+  //       </BackgroundGradient>
+  //       ))}
+  //   </div>     
+  //   </>
+  // );
   return (
     <>
     <div className="flex flex-wrap gap-6 justify-center mt-4">
         {techCategories.map((cat) => (
-        <BackgroundGradient key={cat.tipo} className="rounded-[22px] max-w-sm p-2 sm:p-4 bg-white dark:bg-zinc-900">
-        <Card className="border-0 w-80">
+        <BackgroundGradient key={cat.tipo} className="rounded-[22px] max-w-sm p-2 sm:p-4 bg-white dark:bg-zinc-900 h-full">
+        <Card className="border-0 w-80 h-[450px]">
             <CardHeader>
             <CardTitle className="text-center text-3xl">{cat.tipo}</CardTitle>
                 <CardDescription className="flex flex-wrap gap-8 justify-center mt-4">
