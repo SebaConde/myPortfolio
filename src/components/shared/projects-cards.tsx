@@ -217,7 +217,7 @@ const cards = [
   {
     description: "ecommerce",
     title: "Mate store",
-    src: "./imgs/matestoreHome.png",
+    src: "./imgs/matestoreHome.webp",
     ctaLinkDemo: "https://mate-store-six.vercel.app/",
     ctaLinkRepo: "https://github.com/SebaConde/mateStore-frontend",
     content: () => {
@@ -245,7 +245,7 @@ const cards = [
     {
     description: "?",
     title: "??",
-    src: "./imgs/coming-soon.jpg",
+    src: "./imgs/coming-soon.webp",
     ctaLinkDemo: "https://ui.aceternity.com/templates",
     ctaLinkRepo: "https://ui.aceternity.com/templates",
     content: () => {
@@ -265,7 +265,7 @@ TBA
   {
     description: "?",
     title: "??",
-    src: "./imgs/coming-soon.jpg",
+    src: "./imgs/coming-soon.webp",
     ctaLinkDemo: "https://ui.aceternity.com/templates",
     ctaLinkRepo: "https://ui.aceternity.com/templates",
     content: () => {
@@ -284,7 +284,7 @@ TBA
   },  {
     description: "?",
     title: "??",
-    src: "./imgs/coming-soon.jpg",
+    src: "./imgs/coming-soon.webp",
     ctaLinkDemo: "https://ui.aceternity.com/templates",
     ctaLinkRepo: "https://ui.aceternity.com/templates",
     content: () => {

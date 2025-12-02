@@ -222,7 +222,7 @@ const cards = [
   {
     title: "Curso profeisonal de React",
     description: "desarrollo web / React",
-    src: "./certificados/React2025.jpeg",
+    src: "./certificados/React2025.webp",
     academyLogo: './icons/academy/udemy.svg',
     credencial: "https://codigofacilito.com/certificates/bf0a7f10-6d1b-4d1b-a671-7dc8d8ef3b8c",
     fecha: "2 de Julio 2025",
@@ -240,7 +240,7 @@ const cards = [
   {
     title: "Inmersion IA",
     description: "desarrollo web / React",
-    src: "/certificados/Inmersion ia.jpeg",
+    src: "/certificados/Inmersion ia.webp",
     academyLogo: './icons/academy/alura.svg',
     credencial: "https://credsverse.com/credentials/4dc24c89-49de-4f6b-950b-86f63577e6be/",
     fecha: "4 de Septiembre 2025",
@@ -258,7 +258,7 @@ const cards = [
   {
     title: "Desarrollo con IA",
     description: "desarrollo web / React",
-    src: "/certificados/Iniciacion desarrollo con ia.png",
+    src: "/certificados/Iniciacion desarrollo con ia.webp",
     academyLogo: './icons/academy/BigSchool.svg',
     credencial: "https://drive.google.com/file/d/1izWHBQmDLUA35F_6n_OJpyUiB6qE-yyo/view?pli=1",
     fecha: "11 de Octubre 2025",
@@ -276,7 +276,7 @@ const cards = [
   {
     title: "Genexus 16",
     description: "Genexus",
-    src: "./certificados/React2025.jpeg",
+    src: "./certificados/React2025.webp",
     academyLogo: './icons/academy/genexus.svg',
     credencial: "https://codigofacilito.com/certificates/bf0a7f10-6d1b-4d1b-a671-7dc8d8ef3b8c",
     fecha: "2 de Julio 2025",
