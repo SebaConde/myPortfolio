@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
+import { FileText } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-
 
 import { useEffect, useState } from "react";
 
@@ -79,7 +79,6 @@ export const AnimatedTestimonials = ({
                   }}
                   className="absolute inset-0 origin-bottom"
                 >
-                  
                   <img
                     src={testimonial.src}
                     alt={testimonial.name}
@@ -143,41 +142,46 @@ export const AnimatedTestimonials = ({
                   {word}&nbsp;
                 </motion.span>
               ))}
-          
             </motion.p>
             <div className="flex gap-2 mb-2 mt-6">
-              <a 
-                href='https://github.com/SebaConde' 
-                target="_blank" 
+              <a
+                href="https://github.com/SebaConde"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="transition-transform duration-200 hover:scale-110"
               >
-                <img 
-                  src={'./icons/github.svg'} 
-                  width={30} 
-                  height={30} 
+                <img
+                  src={"./icons/github.svg"}
+                  width={30}
+                  height={30}
                   alt="GitHub"
                 />
               </a>
-              
-              <a 
-                href='https://www.linkedin.com/in/scondevillalba/' 
-                target="_blank" 
+
+              <a
+                href="https://www.linkedin.com/in/scondevillalba/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="transition-transform duration-200 hover:scale-110"
               >
-                <img 
-                  src={'./icons/linkedin.svg'} 
-                  width={30} 
-                  height={30} 
+                <img
+                  src={"./icons/linkedin.svg"}
+                  width={30}
+                  height={30}
                   alt="LinkedIn"
                 />
               </a>
+              <a
+                href="/SebastianCondeVillalbaCV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform duration-200 hover:scale-110"
+              >
+                
+                <FileText width={30} height={30}/>
+              </a>
             </div>
-            
-            
           </motion.div>
-            
         </div>
       </div>
     </div>

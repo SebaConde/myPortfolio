@@ -24,7 +24,7 @@ export default function ContactForm() {
     });
 
     if (res.ok) {
-      alert("Mensaje enviado correctamente 🚀");
+      alert("Mensaje enviado correctamente");
       form.reset();
     } else {
       alert("Hubo un error, intenta nuevamente.");

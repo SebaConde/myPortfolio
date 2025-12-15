@@ -1,8 +1,8 @@
 "use client";
 import { ArrowRight } from "lucide-react";
 import { TypingAnimation } from "./ui/typing-animation";
-import CertificationsCards from "./shared/certifications-cards";
 
+import FeaturedCertificationsCards from "./shared/featured-certifications-cards";
 const Certificaciones = () => {
   return (
     <div className="relative w-full" id="certificaciones">
@@ -10,9 +10,9 @@ const Certificaciones = () => {
             <div className="flex flex-col items-center justify-center h-full text-center mt-6 mb-10">
                 <TypingAnimation>Certificaciones</TypingAnimation>
                 <h2>
-                    Certificaciones que conseguí a lo largo de mi formación.
+                    Algunas de las certificaciones mas destacadas que conseguí a lo largo de mi formación.
                 </h2>
-                <CertificationsCards />
+                <FeaturedCertificationsCards />
             </div>
         {/* <button className="relative inline-flex h-12 overflow-hidden rounded-full p-px focus:outline-none "
           onClick={() => (window.location.href = "/projects")}>
