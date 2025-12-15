@@ -10,7 +10,7 @@ const Certificaciones = () => {
             <div className="flex flex-col items-center justify-center h-full text-center mt-6 mb-10">
                 <TypingAnimation>Certificaciones</TypingAnimation>
                 <h2>
-                    Algunas de las certificaciones mas destacadas que conseguí a lo largo de mi formación.
+                    Algunas certificaciones que respaldan mi experiencia en desarrollo moderno y buenas prácticas de la industria.
                 </h2>
                 <FeaturedCertificationsCards />
             </div>

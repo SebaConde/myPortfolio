@@ -4,7 +4,7 @@ export function AboutMeComponent() {
   const testimonials = [
     {
       quote:
-        "Desarrollador orientado a resultados, con enfoque en aprendizaje continuo y mejora constante. Destaco por mi comunicación efectiva y trabajo colaborativo en entornos ágiles.",
+        "Soy un Full Stack Developer con experiencia práctica en desarrollo de aplicaciones web modernas. Combino habilidades técnicas con metodologías ágiles, colaboración efectiva y enfoque en calidad de código. Me apasiona resolver problemas complejos y construir productos que generen impacto.",
       name: "Sebastián Conde",
       designation: "Full stack developer",
       src: "./imgs/profile.webp",

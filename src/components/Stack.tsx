@@ -7,7 +7,7 @@ export function StackComponent() {
     <div className="relative w-full" id="stack">
       <div className="flex flex-col items-center justify-center h-full text-center mt-8 mb-10">
         <TypingAnimation>Stack técnico</TypingAnimation>
-        <h2>Tecnologías y herramientas que domino para crear soluciones eficientes.</h2>
+        <h2>Stack tecnológico con el que creo soluciones web robustas y escalables, con foco en rendimiento, accesibilidad y mejores prácticas de desarrollo.</h2>
       </div>
       <ExpandableStackCards />
     </div>
