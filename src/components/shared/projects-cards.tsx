@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React, { useEffect, useId, useRef, useState } from "react";
@@ -163,17 +164,17 @@ export default function ProjectsCards() {
         <ul className="grid grid-cols-1 md:grid-cols-4 items-start gap-4">
           {cards.map((card, index) => (
             <BackgroundGradient
-              key={`card-${card.title}-${id}`}
+              key={`card-${card.ctaLinkRepo}-${id}`}
               className="rounded-[22px] max-w-sm p-2 sm:p-4 bg-white dark:bg-zinc-900"
             >
               <motion.div
-                layoutId={`card-${card.title}-${id}`}
+                layoutId={`card-${card.ctaLinkRepo}-${id}`}
                 key={card.title}
                 onClick={() => setActive(card)}
                 className="p-4 flex flex-col  hover:bg-neutral-50 dark:hover:bg-zinc-900 rounded-xl cursor-pointer"
               >
                 <div className="flex gap-4 flex-col w-fullfont-bold">
-                  <motion.div layoutId={`image-${card.title}-${id}`}>
+                  <motion.div layoutId={`image-${card.ctaLinkRepo}-${id}`}>
                     <img
                       width={100}
                       height={100}
@@ -254,37 +255,45 @@ const cards = [
           <div className="flex gap-5 mb-2 mt-0">
             <Image src={next} height={25} width={25} alt="nextIcon" />
             <Image src={tailwind} height={25} width={25} alt="tailwindIcon" />
-            <Image
-              src={typescript}
-              height={25}
-              width={25}
-              alt="typescriptIcon"
-            />
+            <Image src={typescript} height={25} width={25} alt="typescriptIcon"/>
             <Image src={postgre} height={25} width={25} alt="postgreIcon" />
-            <Image src={strapi} height={25} width={25} alt="postgreIcon" />
+            <Image src={strapi} height={25} width={25} alt="strapiIcon" />
           </div>
           <p>
             Mate Store es una plataforma de eCommerce desarrollada con React y
             Next.js, orientada a la venta de productos de mate. Cuenta con
             diseño responsive, experiencia de usuario optimizada y gestión de
             contenidos mediante Strapi CMS, permitiendo administrar productos de
-            forma dinámica y escalable.<br />
+            forma dinámica y escalable.
+            <br />
           </p>
         </div>
       );
     },
   },
   {
-    description: "?",
-    title: "??",
+    description: "autohub",
+    title: "ProAutomotora",
     src: "./imgs/coming-soon.webp",
-    ctaLinkDemo: "https://ui.aceternity.com/templates",
-    ctaLinkRepo: "https://ui.aceternity.com/templates",
+    ctaLinkDemo: "https://pro-automotora.vercel.app/",
+    ctaLinkRepo: "https://github.com/SebaConde/ProAutomotora",
     content: () => {
       return (
         <div>
-          <div className="flex gap-5 mb-2 mt-0">TBA</div>
-          <p>[Soon]</p>
+          <div className="flex gap-5 mb-2 mt-0">
+            <Image src={next} height={25} width={25} alt="nextIcon" />
+            <Image src={tailwind} height={25} width={25} alt="tailwindIcon" />
+            <Image src={typescript} height={25} width={25} alt="typescriptIcon"/>
+            <Image src={prisma} height={25} width={25} alt="prismaIcon"/>
+            <Image src={neon} height={25} width={25} alt="neonDBIcon"/>
+          </div>
+          <p>
+            Sistema de gestión para automotoras orientado al back office.
+            Permite administrar el inventario de vehículos, publicar autos,
+            gestionar fichas con fotos y características, controlar estados de
+            venta y centralizar la información operativa del negocio en un solo
+            lugar.
+          </p>
         </div>
       );
     },
