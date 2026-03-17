@@ -17,7 +17,7 @@ import { ExternalLink } from "lucide-react";
 
 export default function ProjectsCards() {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
-    null
+    null,
   );
   const id = useId();
   const ref = useRef<HTMLDivElement>(null);
@@ -40,7 +40,7 @@ export default function ProjectsCards() {
   }, [active]);
 
   useOutsideClick(ref as React.RefObject<HTMLDivElement>, () =>
-    setActive(null)
+    setActive(null),
   );
 
   return (
@@ -116,7 +116,7 @@ export default function ProjectsCards() {
                         window.open(
                           active.ctaLinkDemo,
                           "_blank",
-                          "noopener,noreferrer"
+                          "noopener,noreferrer",
                         )
                       }
                     >
@@ -131,7 +131,7 @@ export default function ProjectsCards() {
                         window.open(
                           active.ctaLinkRepo,
                           "_blank",
-                          "noopener,noreferrer"
+                          "noopener,noreferrer",
                         )
                       }
                     >
@@ -255,16 +255,22 @@ const cards = [
           <div className="flex gap-5 mb-2 mt-0">
             <Image src={next} height={25} width={25} alt="nextIcon" />
             <Image src={tailwind} height={25} width={25} alt="tailwindIcon" />
-            <Image src={typescript} height={25} width={25} alt="typescriptIcon"/>
+            <Image
+              src={typescript}
+              height={25}
+              width={25}
+              alt="typescriptIcon"
+            />
             <Image src={postgre} height={25} width={25} alt="postgreIcon" />
             <Image src={strapi} height={25} width={25} alt="strapiIcon" />
           </div>
           <p>
-            Mate Store es una plataforma de eCommerce desarrollada con React y
-            Next.js, orientada a la venta de productos de mate. Cuenta con
-            diseño responsive, experiencia de usuario optimizada y gestión de
-            contenidos mediante Strapi CMS, permitiendo administrar productos de
-            forma dinámica y escalable.
+            Desarrollo de una plataforma eCommerce para la venta de productos de
+            mate, construida con React y Next.js. Participé en la implementación
+            del frontend, el diseño responsive y la optimización de la
+            experiencia de usuario. La gestión de contenidos se realizó mediante
+            Strapi CMS, permitiendo administrar productos de forma dinámica y
+            escalar la aplicación de manera eficiente.
             <br />
           </p>
         </div>
@@ -274,7 +280,7 @@ const cards = [
   {
     description: "autohub",
     title: "ProAutomotora",
-    src: "./imgs/coming-soon.webp",
+    src: "./imgs/proAutomotoraHome.webp",
     ctaLinkDemo: "https://pro-automotora.vercel.app/",
     ctaLinkRepo: "https://github.com/SebaConde/ProAutomotora",
     content: () => {
@@ -283,9 +289,14 @@ const cards = [
           <div className="flex gap-5 mb-2 mt-0">
             <Image src={next} height={25} width={25} alt="nextIcon" />
             <Image src={tailwind} height={25} width={25} alt="tailwindIcon" />
-            <Image src={typescript} height={25} width={25} alt="typescriptIcon"/>
-            <Image src={prisma} height={25} width={25} alt="prismaIcon"/>
-            <Image src={neon} height={25} width={25} alt="neonDBIcon"/>
+            <Image
+              src={typescript}
+              height={25}
+              width={25}
+              alt="typescriptIcon"
+            />
+            <Image src={prisma} height={25} width={25} alt="prismaIcon" />
+            <Image src={neon} height={25} width={25} alt="neonDBIcon" />
           </div>
           <p>
             Sistema de gestión para automotoras orientado al back office.
@@ -299,26 +310,37 @@ const cards = [
     },
   },
   {
-    description: "?",
-    title: "??",
-    src: "./imgs/coming-soon.webp",
-    ctaLinkDemo: "https://ui.aceternity.com/templates",
+    description: "ecommerce",
+    title: "ProStore",
+    src: "./imgs/proStoreHome.webp",
+    ctaLinkDemo: "https://prostore-project-brown.vercel.app/",
     ctaLinkRepo: "https://ui.aceternity.com/templates",
     content: () => {
       return (
         <div>
-          <div className="flex gap-5 mb-2 mt-0">TBA</div>
+          <div className="flex gap-5 mb-2 mt-0">
+            <Image src={next} height={25} width={25} alt="nextIcon" />
+            <Image src={tailwind} height={25} width={25} alt="tailwindIcon" />
+            <Image
+              src={typescript}
+              height={25}
+              width={25}
+              alt="typescriptIcon"
+            />
+            <Image src={prisma} height={25} width={25} alt="prismaIcon" />
+            <Image src={neon} height={25} width={25} alt="neonDBIcon" />
+          </div>
           <p>[Soon]</p>
         </div>
       );
     },
   },
   {
-    description: "?",
-    title: "??",
-    src: "./imgs/coming-soon.webp",
-    ctaLinkDemo: "https://ui.aceternity.com/templates",
-    ctaLinkRepo: "https://ui.aceternity.com/templates",
+    description: "Web de reservas",
+    title: "Spa App",
+    src: "./imgs/spaAppHome.webph",
+    ctaLinkDemo: "https://spa-app-kappa.vercel.app/",
+    ctaLinkRepo: "https://github.com/SebaConde/spa-app",
     content: () => {
       return (
         <div>

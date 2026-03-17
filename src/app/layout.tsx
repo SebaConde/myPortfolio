@@ -10,8 +10,8 @@ const urbanist = Urbanist({
 });
 
 export const metadata: Metadata = {
-  title: "Sebastián Conde - Portfolio",
-  description: "Full Stack Developer especializado en React, Next.js, Node.js y TypeScript. Desarrollo aplicaciones web modernas, escalables y orientadas a resultados.",
+  title: "Sebastián Conde - Full Stack Developer",
+  description: "Portfolio de Sebastián Conde, Full Stack Developer especializado en React, Next.js y aplicaciones web modernas. Proyectos, experiencia y contacto.",
 };
 
 export default function RootLayout({

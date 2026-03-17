@@ -4,13 +4,11 @@ export function AboutMeComponent() {
   const testimonials = [
     {
       quote:
-        "Soy un Full Stack Developer con experiencia práctica en desarrollo de aplicaciones web modernas. Combino habilidades técnicas con metodologías ágiles, colaboración efectiva y enfoque en calidad de código. Me apasiona resolver problemas complejos y construir productos que generen impacto.",
+        "Full Stack Developer con experiencia en desarrollo de aplicaciones web utilizando JavaScript, React, Next.js y Node.js. He trabajado en proyectos frontend y backend, implementando interfaces reutilizables, integrando APIs REST y aplicando buenas prácticas de desarrollo. Busco seguir creciendo en entornos colaborativos y orientados a producto.",
       name: "Sebastián Conde",
       designation: "Full stack developer",
       src: "./imgs/profile.webp",
     },
-    
-    
   ];
   return <AnimatedTestimonials testimonials={testimonials} />;
 }

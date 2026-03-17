@@ -5,7 +5,6 @@ import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 
-
 import { BackgroundGradient } from "../ui/background-gradient";
 import { ExternalLink, Calendar1 } from "lucide-react";
 
@@ -37,7 +36,6 @@ export default function FeaturedCertificationsCards() {
 useOutsideClick(ref as React.RefObject<HTMLDivElement>, () => setActive(null));
   return (
     <>
-    
       <AnimatePresence>
         {active && typeof active === "object" && (
           <motion.div
@@ -267,33 +265,67 @@ const cards = [
       return (
         <div>
           <p>
-           Diseño prompts técnicos para obtener código de calidad en minutos. Automatización de procesos de programación con IA. 
+            Diseño prompts técnicos para obtener código de calidad en minutos. Automatización de procesos de programación con IA. 
           </p>
         </div>
       );
     },
   },
   {
-    title: "Genexus 16",
-    description: "Genexus",
-    src: "./certificados/React2025.webp",
-    academyLogo: './icons/academy/genexus.svg',
-    credencial: "https://codigofacilito.com/certificates/bf0a7f10-6d1b-4d1b-a671-7dc8d8ef3b8c",
-    fecha: "2 de Julio 2025",
+    title: "Claude Code in Action",
+    description: "Claude",
+    src: "/certificados/ClaudeCodeInaction.webp",
+    academyLogo: './icons/anthropic.svg',
+    credencial: "https://verify.skilljar.com/c/rjyxy27yh4fq",
+    fecha: "8 de Marzo 2026",
     estado: "finalizado",
     content: () => {
       return (
         <div>
             <p>
-            GeneXus es una suite de desarrollo de código de bajo nivel que permite la generación rápida de
-            aplicaciones de soware en múltiples lenguajes y plataformas. GeneXus ofrece varias ventajas: es fácil de
-            aprender, altamente productivo, multiplataforma y preparado para el futuro, de forma que protege tus
-            activos digitales y simplifica la adopción de nuevas tecnologías.
+            Este curso ofrece una formación integral sobre el uso de Claude Code para tareas de desarrollo de software, abarcando la arquitectura subyacente de los asistentes de programación basados en IA, técnicas prácticas de implementación y estrategias avanzadas de integración. También aprenderás sobre los enfoques de gestión de contexto de Claude Code y cómo extender su funcionalidad mediante servidores MCP y la integración con GitHub.
           </p>
         </div>
       );
     },
   },
-  
- 
+  {
+    title: "Claude 101",
+    description: "Claude",
+    src: "/certificados/Claude101.webp",
+    academyLogo: './icons/anthropic.svg',
+    credencial: "https://verify.skilljar.com/c/sbtfpci6mjaa",
+    fecha: "10 de Marzo 2026",
+    estado: "finalizado",
+    content: () => {
+      return (
+        <div>
+            <p>
+            Este curso ofrece una formación que permite utilizar Claude para las tareas laborales diarias, comprender las funciones principales y explorar recursos para obtener un aprendizaje más avanzado sobre otros temas.
+          </p>
+        </div>
+      );
+    },
+  },
+  // {
+  //   title: "Genexus 16",
+  //   description: "Genexus",
+  //   src: "./certificados/React2025.webp",
+  //   academyLogo: './icons/academy/genexus.svg',
+  //   credencial: "https://codigofacilito.com/certificates/bf0a7f10-6d1b-4d1b-a671-7dc8d8ef3b8c",
+  //   fecha: "2 de Julio 2025",
+  //   estado: "finalizado",
+  //   content: () => {
+  //     return (
+  //       <div>
+  //           <p>
+  //           GeneXus es una suite de desarrollo de código de bajo nivel que permite la generación rápida de
+  //           aplicaciones de soware en múltiples lenguajes y plataformas. GeneXus ofrece varias ventajas: es fácil de
+  //           aprender, altamente productivo, multiplataforma y preparado para el futuro, de forma que protege tus
+  //           activos digitales y simplifica la adopción de nuevas tecnologías.
+  //         </p>
+  //       </div>
+  //     );
+  //   },
+  // },
 ];

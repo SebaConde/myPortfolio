@@ -4,17 +4,19 @@ import { ArrowRight } from "lucide-react";
 import { TypingAnimation } from "./ui/typing-animation";
 import ProjectsCards from "./shared/projects-cards";
 
-
 export function ProjectsComponent() {
   return (
     <div className="relative w-full" id="proyectos">
       <div className="flex flex-col items-center justify-center h-full text-center mt-6 mb-10">
         <TypingAnimation>Proyectos</TypingAnimation>
         <h2>
-          Algunos de mis proyectos destacados.
+          Estos son algunos proyectos en los que trabajé, participando en
+          el diseño e implementación de interfaces, lógica de negocio e
+          integración con APIs, las tecnologías que utilizo y cómo pienso las
+          soluciones desde el desarrollo hasta la experiencia del usuario.
         </h2>
       </div>
-     <ProjectsCards />
+      <ProjectsCards />
       <div className="relative w-full flex flex-col items-center justify-center h-full text-center mt-8 mb-10">
         {/* <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none"
           onClick={() => (window.location.href = '/projects')}>
@@ -24,6 +26,6 @@ export function ProjectsComponent() {
           </span>
         </button> */}
       </div>
-    </div>    
+    </div>
   );
 }
