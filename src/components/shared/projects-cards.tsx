@@ -279,7 +279,7 @@ const cards = [
   },
   {
     description: "autohub",
-    title: "ProAutomotora",
+    title: "ProAutomotora [EN DESARROLLO]",
     src: "./imgs/proAutomotoraHome.webp",
     ctaLinkDemo: "https://pro-automotora.vercel.app/",
     ctaLinkRepo: "https://github.com/SebaConde/ProAutomotora",
@@ -337,7 +337,7 @@ const cards = [
   },
   {
     description: "Web de reservas",
-    title: "Spa App",
+    title: "Spa App [EN DESARROLLO]",
     src: "./imgs/spaAppHome.webph",
     ctaLinkDemo: "https://spa-app-kappa.vercel.app/",
     ctaLinkRepo: "https://github.com/SebaConde/spa-app",
